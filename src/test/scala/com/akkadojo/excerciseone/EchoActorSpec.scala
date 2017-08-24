@@ -1,5 +1,5 @@
-package com.xebia
-package exercise0
+package com.akkadojo
+package excerciseone
 
 import org.specs2.mutable.Specification
 

@@ -1,5 +1,5 @@
-package com.xebia
-package exercise0
+package com.akkadojo
+package excerciseone
 
 import akka.actor.{Actor, Props, ActorRef}
 

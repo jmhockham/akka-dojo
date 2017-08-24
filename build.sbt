@@ -1,6 +1,6 @@
-name := "exercise-one"
+name := "akka-excercises"
 
-organization := "xebia"
+organization := "rps"
 
 version := "0.1-SNAPSHOT"
 
@@ -16,7 +16,7 @@ scalacOptions := Seq("-encoding", "utf8",
                      "-Xlog-reflective-calls"
                     )
 
-mainClass := Some("com.xebia.exercise1.Main")
+mainClass := Some("com.akkadojo.excerciseone.Main")
 
 resolvers ++= Seq("Sonatype Releases"   at "http://oss.sonatype.org/content/repositories/releases",
                   "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
