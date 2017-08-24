@@ -1,4 +1,4 @@
-name := "exercise-one"
+name := "akka-excercises"
 
 organization := "xebia"
 
