@@ -1,8 +1,7 @@
-package com.akkadojo.exerciseone
+package com.akkadojo
 
 import akka.actor.ActorSystem
 import akka.testkit.{ImplicitSender, TestKit}
-
 import org.specs2.specification.After
 
 object TestSupport {

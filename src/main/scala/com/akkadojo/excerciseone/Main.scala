@@ -8,7 +8,7 @@ import akka.pattern.ask
 import akka.util.Timeout
 
 object Main extends App {
-  implicit val system = ActorSystem("exercise-0")
+  implicit val system = ActorSystem("exercise-one")
   import system.dispatcher
 
   implicit val timeout = Timeout(2.seconds)
