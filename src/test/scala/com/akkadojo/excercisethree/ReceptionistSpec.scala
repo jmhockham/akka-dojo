@@ -1,10 +1,12 @@
 package com.akkadojo.excercisethree
 
-import akka.actor.{Actor, ActorRef, ActorRefFactory, Props}
-import org.specs2.mutable.Specification
-import spray.http.StatusCodes
-import spray.testkit.Specs2RouteTest
+import akka.actor.{Actor, Props, ActorRef, ActorRefFactory}
 
+import spray.testkit.Specs2RouteTest
+import spray.http.StatusCodes
+import spray.httpx.SprayJsonSupport._
+
+import org.specs2.mutable.Specification
 class ReceptionistSpec extends Specification
   with Specs2RouteTest {
 

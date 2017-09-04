@@ -2,7 +2,6 @@ package com.akkadojo.excercisethree
 
 import akka.actor.{ActorSystem, Props}
 import akka.io.IO
-import com.akkadojo.excerciseone.Receptionist
 import spray.can.Http
 import spray.can.Http.Bind
 
