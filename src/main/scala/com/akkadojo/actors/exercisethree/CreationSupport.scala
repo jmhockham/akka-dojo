@@ -1,4 +1,4 @@
-package com.akkadojo.excercisethree
+package com.akkadojo.actors.exercisethree
 
 /**
   * Created by jmhockham on 05/09/17.

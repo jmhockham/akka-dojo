@@ -1,4 +1,4 @@
-package com.akkadojo.excercisethree
+package com.akkadojo.actors.exercisethree
 
 import akka.util.Timeout
 import spray.routing.HttpServiceActor

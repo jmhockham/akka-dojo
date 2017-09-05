@@ -1,12 +1,10 @@
-package com.akkadojo.excercisethree
+package com.akkadojo.actors.exercisethree
 
-import akka.actor.{Actor, Props, ActorRef, ActorRefFactory}
-
-import spray.testkit.Specs2RouteTest
+import akka.actor.{Actor, ActorRefFactory}
+import org.specs2.mutable.Specification
 import spray.http.StatusCodes
 import spray.httpx.SprayJsonSupport._
-
-import org.specs2.mutable.Specification
+import spray.testkit.Specs2RouteTest
 
 class ReceptionistSpec extends Specification with Specs2RouteTest {
 
@@ -44,6 +42,5 @@ class ReceptionistSpec extends Specification with Specs2RouteTest {
 //TODO create a FakeReverseActor that only responds to
 // Reverse("akka") and Reverse("some text to reverse") and sends back the expected result for the test
 class FakeReverseActor extends Actor {
-  import ReverseActor._
 
 }

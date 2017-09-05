@@ -1,13 +1,11 @@
-package com.akkadojo
-package exercisetwo
+package com.akkadojo.actors.exercisetwo
+
+import akka.util.Timeout
+import spray.httpx.SprayJsonSupport._
+import spray.routing._
 
 import scala.concurrent.duration._
 import scala.concurrent.{ExecutionContext, Future}
-
-import akka.util.Timeout
-
-import spray.routing._
-import spray.httpx.SprayJsonSupport._
 
 
 class Receptionist extends HttpServiceActor
@@ -29,8 +27,6 @@ trait ReverseRoute extends HttpService {
     post {
       entity(as[ReverseRequest]) { request =>
         implicit val timeout = Timeout(20 seconds)
-
-        import akka.pattern.ask
 
         //TODO replace the next line by asking the actor to Reverse
         //and converting (hint: mapping) the resulting Future[ReverseResult] to a Future[ReverseResponse]

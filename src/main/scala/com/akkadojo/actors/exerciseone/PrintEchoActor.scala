@@ -1,7 +1,4 @@
-package com.akkadojo
-package exerciseone
-
-import akka.actor.{Actor, Props}
+package com.akkadojo.actors.exerciseone
 
 object PrintEchoActor {
   //TODO define a PrintEcho message that can contain a String payload

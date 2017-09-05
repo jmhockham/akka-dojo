@@ -1,7 +1,6 @@
-package com.akkadojo
-package exerciseone
+package com.akkadojo.actors.exerciseone
 
-import akka.actor.{Actor, Props}
+import akka.actor.Props
 
 object PrintActor {
   //define messages for print actor here (Print)
@@ -12,7 +11,6 @@ object PrintActor {
 }
 
 class PrintActor { // TODO extend from Actor
-  import PrintActor._
 
   def receive = {
     //TODO handle the Print message here by println'ing the text in the Print message

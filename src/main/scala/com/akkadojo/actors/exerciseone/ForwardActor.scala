@@ -1,7 +1,4 @@
-package com.akkadojo
-package exerciseone
-
-import akka.actor.{Actor, Props, ActorRef}
+package com.akkadojo.actors.exerciseone
 
 object ForwardActor {
   //TODO define props and name for PrintActor here. Use the following Props syntax: Props(new ForwardActor(param1))

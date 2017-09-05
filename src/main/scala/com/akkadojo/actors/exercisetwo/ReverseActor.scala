@@ -1,7 +1,4 @@
-package com.akkadojo
-package exercisetwo
-
-import akka.actor.{Actor, Props}
+package com.akkadojo.actors.exercisetwo
 
 object ReverseActor {
   //TODO define messages for reverse actor here (Reverse, ReverseResult)
@@ -9,7 +6,6 @@ object ReverseActor {
 }
 
 class ReverseActor { // TODO extend from Actor
-  import ReverseActor._
 
   //TODO write your receive method here, respond with a ReverseResult
 

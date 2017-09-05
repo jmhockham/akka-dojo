@@ -1,4 +1,4 @@
-package com.akkadojo.excercisethree
+package com.akkadojo.actors.exercisethree
 
 import com.akkadojo.TestSupport.AkkaTestkitContext
 import org.specs2.mutable.Specification

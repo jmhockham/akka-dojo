@@ -1,8 +1,7 @@
-package com.akkadojo.excercisethree
+package com.akkadojo.actors.exercisethree
 
-import akka.actor.{Props, ActorSystem}
+import akka.actor.{ActorSystem, Props}
 import akka.io.IO
-
 import spray.can.Http
 import spray.can.Http.Bind
 

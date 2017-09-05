@@ -1,7 +1,6 @@
-package com.akkadojo
-package exerciseone
+package com.akkadojo.actors.exerciseone
 
-import akka.actor.{Actor, Props}
+import akka.actor.Actor
 
 object EchoActor {
   //TODO define props and name for EchoActor here

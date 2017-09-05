@@ -1,15 +1,12 @@
-package com.akkadojo
-package exerciseone
+package com.akkadojo.actors.exerciseone
+
+import akka.actor.ActorSystem
+import akka.util.Timeout
 
 import scala.concurrent.duration._
 
-import akka.actor.ActorSystem
-import akka.pattern.ask
-import akka.util.Timeout
-
 object Main extends App {
   implicit val system = ActorSystem("exercise-one")
-  import system.dispatcher
 
   implicit val timeout = Timeout(2.seconds)
 

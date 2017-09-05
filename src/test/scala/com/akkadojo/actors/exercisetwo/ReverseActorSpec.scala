@@ -1,11 +1,7 @@
-package com.akkadojo
-package exercisetwo
+package com.akkadojo.actors.exercisetwo
 
+import com.akkadojo.TestSupport.AkkaTestkitContext
 import org.specs2.mutable.Specification
-
-import spray.testkit.Specs2RouteTest
-
-import TestSupport._
 
 class ReverseActorSpec extends Specification {
 
@@ -15,8 +11,6 @@ class ReverseActorSpec extends Specification {
       // The ImplicitSender is also available so you can expect responses to be sent to the testActor
       // which can be asserted with the TestKit expect... methods.
       //
-
-      import ReverseActor._
 
 //TODO make this test work, uncomment the commented lines below
 
