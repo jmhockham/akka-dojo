@@ -4,7 +4,7 @@ organization := "rps"
 
 version := "0.1-SNAPSHOT"
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.8"
 
 scalacOptions := Seq("-encoding", "utf8",
                      "-target:jvm-1.7",
