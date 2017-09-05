@@ -6,7 +6,7 @@ object PrintActor {
   //define messages for print actor here (Print)
   case class Print(text: String)
   //define props and name for PrintActor here
-  val props = Props(new PrintActor)
+  //val props = Props(new PrintActor)
   val name = "print-actor"
 }
 

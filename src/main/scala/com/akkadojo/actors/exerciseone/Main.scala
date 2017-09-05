@@ -12,7 +12,7 @@ object Main extends App {
 
   println("Press Enter to terminate.")
 
-  val print = system.actorOf(PrintActor.props, PrintActor.name)
+  //val print = system.actorOf(PrintActor.props, PrintActor.name)
   //TODO: Send a Print message to the print actor, sending is done with the '!' operator
   println("This is from main.")
 
