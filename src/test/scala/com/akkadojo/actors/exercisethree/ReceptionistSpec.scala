@@ -13,11 +13,13 @@ class ReceptionistSpec extends Specification with Specs2RouteTest {
   }
 
   //TODO extend with TestCreationSupport and remove createChild implementation here
+  /*
   val subject = new ReverseRoute {
     implicit def actorRefFactory: ActorRefFactory = system
     implicit def executionContext = system.dispatcher
   }
-
+  */
+  /*
   "The Receptionist" should {
     "Respond with a JSON response that contains a reversed string value" in {
 
@@ -37,10 +39,13 @@ class ReceptionistSpec extends Specification with Specs2RouteTest {
 
     }
   }
+  */
 }
 
 //TODO create a FakeReverseActor that only responds to
 // Reverse("akka") and Reverse("some text to reverse") and sends back the expected result for the test
+/*
 class FakeReverseActor extends Actor {
 
 }
+*/
