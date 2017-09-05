@@ -11,12 +11,9 @@ object Main {
 
   implicit val timeout = Timeout(2.seconds)
 
-  val receptionist = system.actorOf(Props[Receptionist], "receptionist")
+  //TODO implement the receptionist
+  //val receptionist = system.actorOf(Props(new Receptionist), "receptionist")
 
-  println("Press Enter to terminate.")
-
-  //TODO add in reverse function
-
-  System.console.readLine()
+  //IO(Http) ! Bind(listener= receptionist, interface = "0.0.0.0", port=8000)
   system.shutdown()
 }
