@@ -1,5 +1,4 @@
-package com.akkadojo
-package excerciseone
+package com.akkadojo.actors.exercisethree
 
 import spray.json.DefaultJsonProtocol
 
@@ -9,8 +8,8 @@ object ReverseRequest extends DefaultJsonProtocol {
   implicit val format = jsonFormat1(ReverseRequest.apply)
 }
 
-case class ReverseResponse(value: String)
+case class ReverseResponse(value: String, isPalindrome:Boolean = false)
 
 object ReverseResponse extends DefaultJsonProtocol {
-  implicit val format = jsonFormat1(ReverseResponse.apply)
+  implicit val format = jsonFormat2(ReverseResponse.apply)
 }

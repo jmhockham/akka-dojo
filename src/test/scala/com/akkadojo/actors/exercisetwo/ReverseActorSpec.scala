@@ -1,9 +1,7 @@
-package com.akkadojo
-package excerciseone
+package com.akkadojo.actors.exercisetwo
 
+import com.akkadojo.TestSupport.AkkaTestkitContext
 import org.specs2.mutable.Specification
-
-import TestSupport._
 
 class ReverseActorSpec extends Specification {
 

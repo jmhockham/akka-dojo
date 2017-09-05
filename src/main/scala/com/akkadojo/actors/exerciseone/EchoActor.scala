@@ -1,5 +1,4 @@
-package com.akkadojo
-package excerciseone
+package com.akkadojo.actors.exerciseone
 
 import akka.actor.{Actor, Props}
 

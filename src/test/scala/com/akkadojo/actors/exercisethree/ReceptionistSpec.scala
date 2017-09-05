@@ -1,12 +1,11 @@
-package com.akkadojo.excercisethree
+package com.akkadojo.actors.exercisethree
 
-import akka.actor.{Actor, Props, ActorRef, ActorRefFactory}
-
-import spray.testkit.Specs2RouteTest
+import akka.actor.{Actor, ActorRef, ActorRefFactory, Props}
+import com.akkadojo.actors.exercisetwo.ReverseActor.{Reverse, ReverseResult}
+import org.specs2.mutable.Specification
 import spray.http.StatusCodes
 import spray.httpx.SprayJsonSupport._
-
-import org.specs2.mutable.Specification
+import spray.testkit.Specs2RouteTest
 class ReceptionistSpec extends Specification
   with Specs2RouteTest {
 

@@ -1,4 +1,4 @@
-package com.akkadojo.excercisethree
+package com.akkadojo.actors.exercisethree
 
 import akka.actor.{ActorContext, ActorRef, Props}
 

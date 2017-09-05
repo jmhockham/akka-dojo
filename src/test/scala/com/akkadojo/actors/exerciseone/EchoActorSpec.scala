@@ -1,11 +1,7 @@
-package com.akkadojo
-package excerciseone
+package com.akkadojo.actors.exerciseone
 
+import com.akkadojo.TestSupport.AkkaTestkitContext
 import org.specs2.mutable.Specification
-
-import spray.testkit.Specs2RouteTest
-
-import TestSupport._
 
 class EchoActorSpec extends Specification {
 
