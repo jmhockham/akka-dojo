@@ -21,3 +21,5 @@ src_managed/
 .sublime
 *.sublime-*
 
+/.idea/
+/target/
