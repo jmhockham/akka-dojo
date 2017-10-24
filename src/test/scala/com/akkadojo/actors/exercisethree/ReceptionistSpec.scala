@@ -1,7 +1,6 @@
 package com.akkadojo.actors.exercisethree
 
 import akka.actor.{Actor, ActorRef, ActorRefFactory, Props}
-import com.akkadojo.actors.exercisetwo.ReverseActor.{Reverse, ReverseResult}
 import org.specs2.mutable.Specification
 import spray.http.StatusCodes
 import spray.httpx.SprayJsonSupport._

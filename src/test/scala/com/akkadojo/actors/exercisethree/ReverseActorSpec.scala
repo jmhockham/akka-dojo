@@ -1,7 +1,6 @@
 package com.akkadojo.actors.exercisethree
 
 import com.akkadojo.TestSupport.AkkaTestkitContext
-import com.akkadojo.actors.exercisetwo.ReverseActor.{Reverse, ReverseResult}
 import org.specs2.mutable.Specification
 import spray.testkit.Specs2RouteTest
 
