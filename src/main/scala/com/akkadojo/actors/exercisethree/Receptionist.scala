@@ -10,10 +10,10 @@ import scala.concurrent.duration._
 
 
 class Receptionist extends HttpServiceActor
-                      with ReverseRoute {
+                      with ReverseRoute
+                      with ActorContextCreationSupport {
   implicit def executionContext = context.dispatcher
 
-  def createChild(props:Props, name:String) = context.actorOf(props, name)
   def receive = runRoute(reverseRoute)
 
 }
@@ -34,8 +34,10 @@ trait ReverseRoute extends HttpService {
         import akka.pattern.ask
 
         val futureResponse = reverseActor.ask(Reverse(request.value))
-                                         .mapTo[ReverseResult]
-                                         .map(r=> ReverseResponse(r.value))
+                                         .map {
+                                           case PalindromeResult => ReverseResponse(request.value, true)
+                                           case ReverseResult(value) => ReverseResponse(value, false)
+                                         }
 
         complete(futureResponse)
       }
